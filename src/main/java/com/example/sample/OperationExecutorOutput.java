@@ -6,5 +6,5 @@ import lombok.Data;
 @Builder
 @Data
 public class OperationExecutorOutput {
-    private boolean output;
+    private Boolean output;
 }

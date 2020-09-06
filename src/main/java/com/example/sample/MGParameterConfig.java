@@ -21,13 +21,13 @@ public class MGParameterConfig {
      * The alias of targetAttribute that form the lefts part of the equation.
      * It is being matched against a value.
      */
-    private String targetAttribute;
+    private MGAttribute targetAttribute;
 
     /**
      * Either sourceAttribute name would be present or an independent source value
      * would be present.
      */
-    private String sourceAttribute;
+    private MGAttribute sourceAttribute;
 
     /**
      * This is static configured value for handling use-case as.

@@ -1,6 +1,7 @@
 package com.example.sample;
 
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NonNull;
 import lombok.Value;
 
@@ -11,6 +12,7 @@ import java.util.Map;
  */
 @Builder
 @Value
+@Getter
 public class OperationExecutorInput {
 
     /**
