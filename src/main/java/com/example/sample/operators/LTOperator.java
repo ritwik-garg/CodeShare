@@ -8,7 +8,7 @@ import lombok.NonNull;
 
 import java.util.Objects;
 
-public class GTOperator implements OperatorExecutor {
+public class LTOperator implements OperatorExecutor {
     public OperationExecutorOutput execute(final @NonNull OperationExecutorInput input,
                                            final @NonNull ExecutionContext executionContext) {
         if (!validateArgs(input)) {
@@ -26,6 +26,6 @@ public class GTOperator implements OperatorExecutor {
             return OperationExecutorOutput.builder().output(null).build();
         }
         return OperationExecutorOutput.builder().output(input.getOperationConfig().getParameterConfig()
-                .getSourceAttribute().getDataType().applyGTOperator(sourceValue, targetValue)).build();
+                .getSourceAttribute().getDataType().applyLTOperator(sourceValue, targetValue)).build();
     }
 }

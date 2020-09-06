@@ -28,9 +28,6 @@ public interface OperatorExecutor {
         if (Objects.isNull(sourceAttribute.getDataType()) || StringUtils.isBlank(sourceAttribute.getAttributeName())) {
             return false;
         }
-        if (!sourceAttribute.getDataType().getDateTypeClass().equals(targetAttribute.getDataType().getDateTypeClass())) {
-            return false;
-        }
-        return true;
+        return sourceAttribute.getDataType().getDateTypeClass().equals(targetAttribute.getDataType().getDateTypeClass());
     }
 }
